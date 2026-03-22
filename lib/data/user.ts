@@ -1,13 +1,8 @@
-export interface User {
-  id: number;
-  name: string;
-}
+import { eq } from "drizzle-orm";
+import { db } from "../db";
+import { users } from "../db/schema";
+import { UsersMod } from "../db/schema";
 
-export default async function GetUser(id: number): Promise<User | null> {
-  console.log(`id:${id}`);
-
-  const user: User = { name: "hello", id: id };
-
-  //   return null;
-  return user;
+export default async function GetUserByID(id: number): Promise<UsersMod[] | null> {
+  return await db.select().from(users).where(eq(users.id, id));
 }
