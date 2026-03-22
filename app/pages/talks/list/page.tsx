@@ -1,3 +1,5 @@
+"use client";
+
 export default function TalkList() {
-  return <div>hello</div>;
+  return <div>TalkList</div>;
 }
