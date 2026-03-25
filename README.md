@@ -46,3 +46,6 @@ my-app/
 ├── drizzle/                    # Drizzle migrations（如果用 Drizzle Kit）
 └── .env
 ```
+
+
+这是一段 <mark>高亮文本</mark> 示例。

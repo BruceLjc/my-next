@@ -25,3 +25,5 @@ export default async function Auth(token: string): Promise<User> {
     id: data[0].id,
   };
 }
+
+
